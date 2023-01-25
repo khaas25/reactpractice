@@ -1,38 +1,103 @@
-.App {
+.main-header {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-size: 40px;
+  text-align: center;
+  background-color: lightslategray;
+  color: white;
+}
+.about-section {
+  width: 90%;
+  padding: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sub-header {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  height: 40px;
+  background-color: lightslategray;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#links {
+  color: white;
+  font-size: 18px;
+  width: 80px;
+  display: inline-block;
+  height: 20px;
+  padding: 10px 0px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: lightslategray;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+.contact-btn-container {
+  text-align: center;
+  padding: 50px;
+}
+
+#contact-popup {
+  padding: 20px;
+  background-color: lightsteelblue;
+  color: white;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  height: 400px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+}
+span {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bttn-container {
+  margin: auto;
+  width: 70%;
+}
+.bttn-container h2,
+.bttn-container p {
+  text-align: center;
+}
+.all-products {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.all-products div {
+  width: 300px;
+  padding: 20px;
+  height: 300px;
+  background-color: lightsteelblue;
+  color: white;
+  text-align: center;
 }
